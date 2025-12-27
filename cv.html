@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Reisya Pratama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: #f3f4f6;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        
+        /* A4 Paper setup for printing */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        .a4-page {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        /* Enhancv Style Specifics */
+        .section-title {
+            color: #111827;
+            font-weight: 700;
+            font-size: 0.8rem; /* 14px */
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title i {
+            color: #000000; /* black accent */
+            margin-right: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .job-title {
+            font-weight: 600;
+            color: #111827;
+            font-size: 1rem;
+        }
+
+        .company-name {
+            color: #000000; /* black accent */
+            font-weight: 500;
+        }
+
+        .date-location {
+            font-size: 0.8rem;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            font-size: 0.7rem;
+            color: #374151;
+            line-height: 1.5;
+        }
+
+        .skill-tag {
+            background-color: #f0fdfa;
+            color: #0f766e;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 2px;
+        }
+
+        .project-link {
+            color: #14b8a6;
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+            .a4-page {
+                margin: 0;
+                box-shadow: none;
+                max-width: 100%;
+                padding: 30px; /* Slightly less padding for print margins */
+            }
+            /* Hide URL printing */
+            a[href]:after {
+                content: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a4-page">
+        <!-- Header -->
+        <header class="mb-8 border-b border-gray-200 pb-6">
+            <h1 class="text-4xl font-bold text-gray-900 mb-2 uppercase tracking-wide">Reisya Pratama</h1>
+            <h2 class="text-lg text-black-600 font-medium mb-4">Aspiring Software Developer | Bangkit 2024 Participant | Informatics Student at Universitas Tanjungpura</h2>
+            
+            <div class="flex flex-wrap gap-4 text-sm text-gray-600 mt-3">
+                <div class="flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-black-500"></i> +6281351998132
+                </div>
+                <div class="flex items-center gap-1">
+                    <i class="fa-solid fa-envelope text-black-500"></i> reisyaprtm@gmail.com
+                </div>
+                <div class="flex items-center gap-1">
+                    <i class="fa-brands fa-linkedin text-black-500"></i> <a href="https://www.linkedin.com/in/reisya-pratama-bb2ba0306/" class="hover:text-black-700">LinkedIn Profile</a>
+                </div>
+                <div class="flex items-center gap-1">
+                    <i class="fa-solid fa-location-dot text-black-500"></i> Pontianak, ID
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Left Column (Main Content) -->
+            <div class="md:col-span-2 space-y-8">
+                
+                <!-- Experience Section -->
+                <section>
+                    <h3 class="section-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+                    
+                    <!-- Job 1 -->
+                    <div class="mb-5">
+                        <div class="flex justify-between items-baseline">
+                            <div class="job-title">Communication and Information Division</div>
+                            <div class="text-sm font-semibold text-gray-700">2025</div>
+                        </div>
+                        <div class="company-name mb-1">Informatics Engineering Students Association</div>
+                        <div class="date-location">Tanjungpura University</div>
+                        <ul class="list-disc list-outside ml-4 description space-y-1">
+                            <li>As a Copywriter, I am responsible for crafting engaging and persuasive copy across various digital platforms.</li>
+                            <li>Collaborate closely with the creative team to align visual elements with compelling storytelling, ensuring a consistent brand voice for the student organization.</li>
+                            <li>My work focuses on transforming complex information into relatable content that resonates with a diverse audience and drives community engagement.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="mb-5">
+                        <div class="flex justify-between items-baseline">
+                            <div class="job-title">Coding Instructor</div>
+                            <div class="text-sm font-semibold text-gray-700">09/2024 - 05/2025</div>
+                        </div>
+                        <div class="company-name mb-1">Freelance</div>
+                        <div class="date-location">Pontianak, Indonesia</div>
+                        <ul class="list-disc list-outside ml-4 description space-y-1">
+                            <li>Provided tutoring sessions for fellow students in Data Structures and Algorithms, Web Programming, Algorithm Strategy, and Artificial Intelligence.</li>
+                            <li>Strengthened communication and mentoring skills by adapting explanations to different learning styles.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="mb-5">
+                        <div class="flex justify-between items-baseline">
+                            <div class="job-title">Fullstack Web Developer</div>
+                            <div class="text-sm font-semibold text-gray-700">05/2025 - 06/2025</div>
+                        </div>
+                        <div class="company-name mb-1">Freelance</div>
+                        <div class="date-location">Pontianak, Indonesia</div>
+                        <ul class="list-disc list-outside ml-4 description space-y-1">
+                            <li>Designed and developed a web-based system with multi-user roles (Admin & Worker) to manage projects, tasks, clients, and documents using Laravel & MySQL.</li>
+                            <li>Features include progress tracking, real-time dashboard, and automated reporting, improving efficiency and transparency in project management.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="mb-5">
+                        <div class="flex justify-between items-baseline">
+                            <div class="job-title">Junior AI Engineer</div>
+                            <div class="text-sm font-semibold text-gray-700">2025</div>
+                        </div>
+                        <div class="company-name mb-1">Futurescale Digital Technology</div>
+                        <div class="date-location">Pontianak, Indonesia</div>
+                        <ul class="list-disc list-outside ml-4 description space-y-1">
+                            <li>Designed and developed AI-powered chatbot demos to showcase product capabilities to potential clients.</li>
+                            <li>Implemented mechanics and conversational logic to enhance chatbot performance and user experience.</li>
+                            <li>Collaborated with the team to explore LLM integration and applied AI techniques for practical use cases.</li>
+                            <li>Contributed to early-stage product development, laying the foundation for future client projects.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section>
+                    <h3 class="section-title"><i class="fa-solid fa-rocket"></i> Projects</h3>
+
+                    <!-- Project 1 -->
+                    <div class="mb-5">
+                        <div class="job-title">SoundMood Mobile App</div>
+                        <a href="https://github.com/SoundMood/mobile-development" target="_blank" class="project-link block mb-2"><i class="fa-brands fa-github"></i> github.com/SoundMood/mobile-development</a>
+                        <ul class="list-disc list-outside ml-4 description space-y-1">
+                            <li>Developed an Android application that generates personalized Spotify playlists based on users’ daily moods using Kotlin, MVVM, and Spotify API.</li>
+                            <li>Collaborated with a seven-member cross-functional team (Mobile, Machine Learning, Cloud) using GitHub for version control.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="mb-5">
+                        <div class="job-title">Work Management Information System – CV. Aryunda Juante</div>
+                        <a href="https://github.com/reisyaprtma/WorkManagementSystem-CV-AryundaJuante" target="_blank" class="project-link block mb-2"><i class="fa-brands fa-github"></i> github.com/reisyaprtma/WorkManagementSystem</a>
+                        <p class="description">Designed and developed a web-based system with multi-user roles (Admin & Worker) to manage projects, tasks, clients, and documents using Laravel & MySQL. Included real-time dashboard and automated reporting.</p>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="mb-5">
+                        <div class="job-title">IntelliGem: AI Document Assistant</div>
+                        <a href="https://github.com/yeoreium/intelliGem" target="_blank" class="project-link block mb-2"><i class="fa-brands fa-github"></i> github.com/yeoreium/intelliGem</a>
+                        <p class="description">Developed a full-stack AI assistant using JavaScript & Node.js, focused on advanced prompt engineering for Google Gemini 2.5 Flash API. Features include contextual paraphrasing and summarization.</p>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="mb-5">
+                        <div class="job-title">AI HR Demo Chatbot</div>
+                        <a href="https://github.com/reisyaprtma/HR-Chatbot" target="_blank" class="project-link block mb-2"><i class="fa-brands fa-github"></i> github.com/reisyaprtma/HR-Chatbot</a>
+                        <p class="description">Modern, intelligent HR recruitment chatbot to streamline hiring for automotive technicians. Uses n8n backend workflow to automate CV processing and evaluation.</p>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="mb-5">
+                        <div class="job-title">Dicoding Story App</div>
+                        <a href="https://github.com/reisyaprtma/DicodingStoryApp-Mobile" target="_blank" class="project-link block mb-2"><i class="fa-brands fa-github"></i> github.com/reisyaprtma/DicodingStoryApp</a>
+                        <p class="description">Story-sharing android app submission for Belajar Aplikasi Android Intermediate course. Features user auth, story feeds, and image uploads.</p>
+                    </div>
+
+                </section>
+            </div>
+
+            <!-- Right Column (Sidebar) -->
+            <div class="md:col-span-1 space-y-8">
+                
+                <!-- Education -->
+                <section>
+                    <h3 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                    
+                    <div class="mb-4">
+                        <div class="job-title text-base">Bachelor Degree - Informatics Engineering</div>
+                        <div class="company-name text-sm">Tanjungpura University</div>
+                        <div class="date-location">08/2022 - Present</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="job-title text-base">Mobile Development</div>
+                        <div class="company-name text-sm">Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</div>
+                        <div class="date-location">09/2024 - 12/2024</div>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section>
+                    <h3 class="section-title"><i class="fa-solid fa-layer-group"></i> Skills</h3>
+                    
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-gray-700 mb-2">Hard Skills</h4>
+                        <div class="flex flex-wrap">
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Javascript</span>
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">API Integration</span>
+                            <span class="skill-tag">Prompt Engineering</span>
+                            <span class="skill-tag">AI Integration</span>
+                            <span class="skill-tag">Kotlin</span>
+                            <span class="skill-tag">Mobile Development</span>
+                            <span class="skill-tag">n8n</span>
+                            <span class="skill-tag">Copywriting</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-sm font-bold text-gray-700 mb-2">Soft Skills</h4>
+                        <div class="flex flex-wrap">
+                            <span class="skill-tag">Logical Thinking</span>
+                            <span class="skill-tag">Analytic Thinking</span>
+                            <span class="skill-tag">Effective Communication</span>
+                            <span class="skill-tag">Problem Solving</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section>
+                    <h3 class="section-title"><i class="fa-solid fa-certificate"></i> Certifications</h3>
+                    
+                    <div class="mb-4">
+                        <div class="job-title text-sm">Bangkit Certificate of Completion</div>
+                        <div class="text-xs text-gray-600 mb-1">Bangkit Academy</div>
+                        <div class="text-xs text-gray-500 font-mono">BA24/GRAD/XXIV-01/A324B4KY3738</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="job-title text-sm">Belajar Pengembangan Aplikasi Android Intermediate</div>
+                        <div class="text-xs text-gray-600 mb-1">Dicoding Indonesia</div>
+                        <a href="https://www.dicoding.com/certificates/07Z63KGYRZQR" target="_blank" class="text-xs text-black-600 hover:underline">View Certificate</a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        
+        <!-- Footer / Decoration -->
+        <div class="mt-8 pt-4 border-t border-gray-200 text-center">
+            <p class="text-xs text-gray-400">© 2025 Reisya Pratama</p>
+        </div>
+    </div>
+
+</body>
+</html>
